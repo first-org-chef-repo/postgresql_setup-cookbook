@@ -35,12 +35,12 @@ platforms:
       tag: latest
       privileged: true
       pid_one_command: /sbin/init
-  - name: ubuntu-20.04
-    driver:
-      image: dokken/ubuntu-20.04
-      tag: latest
-      privileged: true
-      pid_one_command: /bin/systemd
+  # - name: ubuntu-20.04
+  #   driver:
+  #     image: dokken/ubuntu-20.04
+  #     tag: latest
+  #     privileged: true
+  #     pid_one_command: /bin/systemd
 
 # lifecycle:
 #   pre_converge:
