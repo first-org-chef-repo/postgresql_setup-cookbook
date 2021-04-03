@@ -42,14 +42,14 @@ jobs:
           service docker status
 
       - name: Kitchen Converge
-        run: echo "Skipping kitchen test for this sample cookbook"
+        run: echo "Skipping kitchen converge for this sample cookbook"
           
       - name: Kitchen Test
-        run: kitchen verify
+        run: echo "Skipping kitchen test for this sample cookbook"
         
       - name: Cleanup Containers 
         if: always()
-        run: kitchen destroy
+        run: echo "Skipping kitchen test for this sample cookbook"
 
   Cookbook-Upload:
     runs-on: self-hosted
